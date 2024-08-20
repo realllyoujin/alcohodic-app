@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+/* Import Didot font */
+@import url('https://fonts.googleapis.com/css2?family=Didot:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+  background-color: #fff; /* White background for a clean look */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Improve readability */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Main App Styles */
+.app {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+/* Header Style */
+.app-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem; /* Increased padding for more spacing */
+  background: #000; /* Black background for sophistication */
+  color: #fff; /* White text for contrast */
+}
+
+/* Header Title */
+.app-header h1 {
+  font-family: 'Didot', serif; /* Elegant font for the title */
+  font-size: 4rem; /* Larger font size for emphasis */
+  margin: 0;
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: -0.2px; /* Adjusted spacing */
+}
+
+/* Home Page Container */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; /* Increased padding for more spacing */
+  height: 100%;
+  background: url('/path-to-your-background-image.jpg') no-repeat center center; /* Optional background image */
+  background-size: cover; /* Cover the container */
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem; /* Space below search form */
+  width: 100%; /* Full width to align with the container */
+  max-width: 800px; /* Maximum width for the form */
+}
+
+.search-input {
+  width: 100%; /* Full width */
+  height: 50px; /* Height of the search input */
+  padding: 0 1rem; /* Padding inside the input */
+  font-size: 1rem; /* Font size of the input text */
+  border: 2px solid #333; /* Border color */
+  border-radius: 25px; /* Round corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+  outline: none; /* Remove default outline */
+}
+
+.search-button {
+  background: #333; /* Dark button background */
+  border: none;
+  border-radius: 50%; /* Round button */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s, transform 0.3s;
+  margin-left: 1rem; /* Space between input and button */
 }
 
-.App-link {
-  color: #61dafb;
+/* SVG Icon for the search button */
+.search-button svg {
+  fill: #fff; /* White color for the SVG icon */
+  width: 24px; /* Width of the icon */
+  height: 24px; /* Height of the icon */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Change icon color to white on hover */
+.search-button:hover {
+  background: #000; /* Darker background on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Home Page Title */
+.home-title {
+  font-family: 'Didot', serif; /* Elegant font for the title */
+  font-size: 3rem; /* Size adjusted for emphasis */
+  margin: 0 0 2rem 0; /* Margin adjusted for spacing */
+  letter-spacing: -4px; /* Reduced letter-spacing */
+  text-align: center;
+}
+
+/* Button Container */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+  gap: 2rem;
+  justify-items: center; /* Center items in each grid cell */
+  width: 100%;
+  max-width: 800px; /* Increased max-width */
+}
+
+/* Button Style */
+.home-button {
+  width: 300px; /* Increased width for a more prominent look */
+  height: 300px; /* Increased height for a square shape */
+  font-family: 'Didot', serif; /* Consistent with title font */
+  font-size: 1.8rem; /* Larger font size for better readability */
+  color: #fff;
+  background: #333; /* Dark gray for a refined look */
+  border: none;
+  border-radius: 15px; /* Rounded corners for a more modern look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: -4px; /* Reduced letter-spacing */
+}
+
+.home-button:hover {
+  background: #000; /* Black on hover for a stronger effect */
+  transform: translateY(-6px); /* Slight lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.main-content {
+  flex: 1;
+  padding: 3rem; /* Increased padding for better spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

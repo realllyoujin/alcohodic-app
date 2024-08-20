@@ -1,0 +1,69 @@
+/* Import Montserrat and Bodoni fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Layout Styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff; /* White background for a clean look */
+}
+
+/* Header Style */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; /* Increased padding for more spacing */
+  background: #000; /* Black background for sophistication */
+  color: #fff; /* White text for contrast */
+}
+
+/* Page Wrapper */
+.page-wrapper {
+  max-width: 900px; /* Increased max-width for more content space */
+  margin: 2rem auto;
+  padding: 2rem; /* Increased padding for better spacing */
+  background-color: #fff; /* Clean white background */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+/* Page Content */
+.page-content {
+  text-align: center;
+}
+
+.page-content h2 {
+  font-family: 'Bodoni Moda', serif; /* Elegant font for headings */
+  margin-top: 0;
+  font-size: 2.5rem; /* Increased font size for emphasis */
+  color: #333;
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: -2px; /* Adjusted spacing */
+}
+
+.page-content p {
+  margin: 1.5rem 0;
+  line-height: 1.8; /* Increased line-height for readability */
+  color: #555;
+}
+
+/* Button Styles */
+.button {
+  padding: 1rem 2rem; /* Increased padding for larger buttons */
+  font-family: 'Montserrat', sans-serif; /* Consistent with body font */
+  font-size: 1.2rem; /* Larger font size for better readability */
+  color: #333; /* Dark gray text */
+  border: 1px solid #333; /* Dark gray border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  letter-spacing: -2px; /* Adjusted letter-spacing */
+}
+
+.button:hover {
+  background-color: #333; /* Dark gray background on hover */
+  color: #fff; /* White text on hover */
+}

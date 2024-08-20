@@ -33,7 +33,7 @@ body {
   font-size: 4rem; /* Larger font size for emphasis */
   margin: 0;
   font-weight: 700; /* Bold font weight */
-  letter-spacing: -0.2px; /* Adjusted spacing */
+  letter-spacing: -5px; /* Adjusted spacing */
 }
 
 /* Home Page Container */
@@ -48,14 +48,16 @@ body {
 }
 
 /* Search Form */
-.search-form {
+.search-bar {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center horizontally */
   margin-bottom: 2rem; /* Space below search form */
   width: 100%; /* Full width to align with the container */
   max-width: 800px; /* Maximum width for the form */
 }
 
+/* Search Input */
 .search-input {
   width: 100%; /* Full width */
   height: 50px; /* Height of the search input */
@@ -67,6 +69,7 @@ body {
   outline: none; /* Remove default outline */
 }
 
+/* Search Button */
 .search-button {
   background: #333; /* Dark button background */
   border: none;
@@ -129,7 +132,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  letter-spacing: -4px; /* Reduced letter-spacing */
+  letter-spacing: -2px; /* Reduced letter-spacing */
 }
 
 .home-button:hover {
@@ -138,10 +141,77 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
-.main-content {
-  flex: 1;
-  padding: 3rem; /* Increased padding for better spacing */
+/* Page Wrapper for Detail Pages */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 3rem; /* Padding for spacing */
+}
+
+/* Page Header for Detail Pages */
+.page-header {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  width: 100%; /* Full width */
+}
+
+/* Page Content for Detail Pages */
+.page-content {
+  max-width: 800px; /* Maximum width for content */
+  width: 100%; /* Full width */
+  text-align: center; /* Center-align text */
+  margin-top: 2rem; /* Margin on top */
+}
+
+/* 정렬 버튼 스타일 */
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.sort-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.sort-button:hover {
+  background-color: #000;
+}
+
+/* 데이터 리스트 스타일 */
+.data-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.data-item {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-item h3 {
+  font-family: 'Didot', serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.data-item p {
+  margin: 0.25rem 0;
 }

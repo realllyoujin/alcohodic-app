@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';  // CSS 파일을 임포트합니다
 
-const whiskeyData = [
-  { name: 'Whiskey A', country: 'Scotland', alcoholContent: '40%' },
-  { name: 'Whiskey B', country: 'USA', alcoholContent: '45%' },
-  { name: 'Whiskey C', country: 'Ireland', alcoholContent: '43%' },
-  { name: 'Whiskey D', country: 'Japan', alcoholContent: '50%' },
+const sakeData = [
+  { name: 'Sake A', country: 'Japan', alcoholContent: '15%' },
+  { name: 'Sake B', country: 'Japan', alcoholContent: '17%' },
+  { name: 'Sake C', country: 'China', alcoholContent: '14%' },
+  { name: 'Sake D', country: 'Korea', alcoholContent: '16%' },
   // 추가 데이터
 ];
 
-const Whiskey = ({ resetButtons }) => {
+const Sake = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
   const navigate = useNavigate();
 
@@ -26,11 +26,11 @@ const Whiskey = ({ resetButtons }) => {
   const sortedData = () => {
     switch (sortBy) {
       case 'country':
-        return [...whiskeyData].sort((a, b) => a.country.localeCompare(b.country));
+        return [...sakeData].sort((a, b) => a.country.localeCompare(b.country));
       case 'alcoholContent':
-        return [...whiskeyData].sort((a, b) => parseFloat(a.alcoholContent) - parseFloat(b.alcoholContent));
+        return [...sakeData].sort((a, b) => parseFloat(a.alcoholContent) - parseFloat(b.alcoholContent));
       default:
-        return whiskeyData;
+        return sakeData;
     }
   };
 
@@ -46,15 +46,15 @@ const Whiskey = ({ resetButtons }) => {
         <button className="button" onClick={handleBack}>Home</button>
       </div>
       <div className="page-content">
-        <h2>Whiskey</h2>
+        <h2>Sake</h2>
         <p>
-          Whiskey is a distilled alcoholic beverage made from fermented grain mash. The grains used can include barley, corn, rye, and wheat. The production process involves aging the whiskey in wooden casks, which imparts unique flavors and colors to the final product.
+          Sake is a traditional Japanese alcoholic beverage made from fermented rice. It is often referred to as "rice wine," though its production process is more akin to brewing than winemaking. Sake has a wide range of flavors, from sweet and fruity to dry and crisp.
         </p>
         <p>
-          Whiskey is known for its rich, complex flavors that vary depending on the type and region of production. Scotch whiskey, bourbon, and Irish whiskey are some of the most well-known varieties. Each type has its own distinctive characteristics, influenced by factors such as ingredients, distillation process, and aging time.
+          The alcohol content of sake typically ranges from 15% to 20%. It can be enjoyed warm or chilled, depending on the type of sake and personal preference. Sake is often paired with Japanese cuisine and can be served in a variety of settings, from casual to formal.
         </p>
         <p>
-          Whiskey can be enjoyed neat, on the rocks, or as part of various cocktails. Its diverse range of flavors and styles makes it a popular choice for connoisseurs and casual drinkers alike.
+          Sake is a versatile drink that has gained popularity worldwide, with many varieties available to suit different tastes and occasions.
         </p>
 
         <div className="sort-buttons">
@@ -76,4 +76,4 @@ const Whiskey = ({ resetButtons }) => {
   );
 };
 
-export default Whiskey;
+export default Sake;

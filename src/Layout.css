@@ -60,7 +60,7 @@
   background-color: #fff; /* White background */
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  letter-spacing: -2px; /* Adjusted letter-spacing */
+  letter-spacing: -3px; /* Adjusted letter-spacing */
 }
 
 .button:hover {

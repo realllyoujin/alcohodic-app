@@ -13,8 +13,8 @@
 .app-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 3rem; /* Increased padding for more spacing */
+  align-items: flex-start; /* Left alignment */
+  padding: 20px; /* Increased padding for more spacing */
   background: #000; /* Black background for sophistication */
   color: #fff; /* White text for contrast */
 }

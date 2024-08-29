@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css';  // CSS 파일을 임포트합니다
+import '../App.css'; 
 
 const beerData = [
   { name: 'Beer A', country: 'USA', alcoholContent: '5%' },

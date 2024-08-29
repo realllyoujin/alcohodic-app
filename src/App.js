@@ -24,12 +24,6 @@ const App = () => {
           path="/"
           element={
             <div className="home-page">
-              <div className="search-bar">
-                <input type="text" className="search-input" placeholder="Search..." />
-                <button className="search-button">
-                  <span role="img" aria-label="Search">🔍</span>
-                </button>
-              </div>
               <h2 className="home-title">kind of</h2>
               <div className="button-container">
                 <button className="home-button" onClick={() => { handleNavigate(); navigate('/soju'); }}>Soju</button>

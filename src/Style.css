@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Didot:wght@400;700&display=swap');
+
+.navbar {
+    background-color: #333;
+    padding: 1em;
+    color: white;
+    text-align: left;
+    font-family: 'Didot', serif;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+  }
+  
+  .container {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }

@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css';  // CSS 파일을 임포트합니다
+import '../App.css'; 
 
-const sakeData = [
-  { name: 'Sake A', country: 'Japan', alcoholContent: '15%' },
-  { name: 'Sake B', country: 'Japan', alcoholContent: '17%' },
-  { name: 'Sake C', country: 'China', alcoholContent: '14%' },
-  { name: 'Sake D', country: 'Korea', alcoholContent: '16%' },
-  // 추가 데이터
-];
+// JSON 파일을 import합니다
+import sakeData from './Data/sakeData.json';
 
 const Sake = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
@@ -28,7 +23,7 @@ const Sake = ({ resetButtons }) => {
       case 'country':
         return [...sakeData].sort((a, b) => a.country.localeCompare(b.country));
       case 'alcoholContent':
-        return [...sakeData].sort((a, b) => parseFloat(a.alcoholContent) - parseFloat(b.alcoholContent));
+        return [...sakeData].sort((a, b) => a.alcoholContent - b.alcoholContent);
       default:
         return sakeData;
     }
@@ -48,13 +43,13 @@ const Sake = ({ resetButtons }) => {
       <div className="page-content">
         <h2>Sake</h2>
         <p>
-          Sake is a traditional Japanese alcoholic beverage made from fermented rice. It is often referred to as "rice wine," though its production process is more akin to brewing than winemaking. Sake has a wide range of flavors, from sweet and fruity to dry and crisp.
+          Sake is a traditional Japanese alcoholic beverage made from fermented rice. Its production process involves brewing and fermenting polished rice, and it has a unique taste and aroma that can vary widely depending on the type and brewing method. Sake can be enjoyed warm or chilled, and is often served at various occasions and meals in Japan.
         </p>
         <p>
-          The alcohol content of sake typically ranges from 15% to 20%. It can be enjoyed warm or chilled, depending on the type of sake and personal preference. Sake is often paired with Japanese cuisine and can be served in a variety of settings, from casual to formal.
+          The alcohol content of sake typically ranges from 15% to 20%, and it can be classified into various types such as Junmai, Ginjo, and Daiginjo. Each type has its own distinctive flavor profile, influenced by factors like rice variety, water quality, and brewing techniques.
         </p>
         <p>
-          Sake is a versatile drink that has gained popularity worldwide, with many varieties available to suit different tastes and occasions.
+          Sake pairs well with a range of foods, from sushi and sashimi to grilled meats and savory dishes. Its versatility and rich flavors make it a popular choice among those who appreciate a nuanced and culturally significant beverage.
         </p>
 
         <div className="sort-buttons">
@@ -67,7 +62,7 @@ const Sake = ({ resetButtons }) => {
             <div key={index} className="data-item">
               <h3>{item.name}</h3>
               <p>Country: {item.country}</p>
-              <p>Alcohol Content: {item.alcoholContent}</p>
+              <p>Alcohol Content: {item.alcoholContent}%</p>
             </div>
           ))}
         </div>

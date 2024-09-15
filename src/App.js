@@ -6,7 +6,7 @@ import Beer from './pages/Beer';
 import Whiskey from './pages/Whiskey';
 import Wine from './pages/Wine';
 import Sake from './pages/Sake';
-import Goryangju from './pages/Goryangju';
+import Gaoliang from './pages/Gaoliang';
 import './App.css';  // CSS 파일을 임포트합니다
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
                 <button className="home-button" onClick={() => { handleNavigate(); navigate('/whiskey'); }}>Whiskey</button>
                 <button className="home-button" onClick={() => { handleNavigate(); navigate('/wine'); }}>Wine</button>
                 <button className="home-button" onClick={() => { handleNavigate(); navigate('/sake'); }}>Sake</button>
-                <button className="home-button" onClick={() => { handleNavigate(); navigate('/goryangju'); }}>Goryangju</button>
+                <button className="home-button" onClick={() => { handleNavigate(); navigate('/Gaoliang'); }}>Gaoliang</button>
               </div>
             </div>
           }
@@ -41,7 +41,7 @@ const App = () => {
         <Route path="/whiskey" element={<Whiskey resetButtons={() => setShowButtons(true)} />} />
         <Route path="/wine" element={<Wine resetButtons={() => setShowButtons(true)} />} />
         <Route path="/sake" element={<Sake resetButtons={() => setShowButtons(true)} />} />
-        <Route path="/goryangju" element={<Goryangju resetButtons={() => setShowButtons(true)} />} />
+        <Route path="/Gaoliang" element={<Gaoliang resetButtons={() => setShowButtons(true)} />} />
       </Routes>
     </Layout>
   );

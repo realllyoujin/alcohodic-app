@@ -1,36 +1,32 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css';  // CSS 파일을 임포트합니다
+import '../App.css';
+import gaoliangData from './Data/gaoliangData.json';  // JSON 파일을 임포트합니다
 
-const goryangjuData = [
-  { name: 'Goryangju A', country: 'Korea', alcoholContent: '18%' },
-  { name: 'Goryangju B', country: 'Korea', alcoholContent: '20%' },
-  { name: 'Goryangju C', country: 'Japan', alcoholContent: '16%' },
-  { name: 'Goryangju D', country: 'China', alcoholContent: '17%' },
-  // 추가 데이터
-];
-
-const Goryangju = ({ resetButtons }) => {
+const Gaoliang = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
   const navigate = useNavigate();
 
+  // 뒤로가기 버튼 핸들러
   const handleBack = () => {
     resetButtons();
     navigate('/');
   };
 
+  // 정렬 핸들러
   const handleSort = (criteria) => {
     setSortBy(criteria);
   };
 
+  // 정렬된 데이터 반환
   const sortedData = () => {
     switch (sortBy) {
       case 'country':
-        return [...goryangjuData].sort((a, b) => a.country.localeCompare(b.country));
+        return [...gaoliangData].sort((a, b) => a.country.localeCompare(b.country));
       case 'alcoholContent':
-        return [...goryangjuData].sort((a, b) => parseFloat(a.alcoholContent) - parseFloat(b.alcoholContent));
+        return [...gaoliangData].sort((a, b) => a.alcoholContent - b.alcoholContent);
       default:
-        return goryangjuData;
+        return gaoliangData;
     }
   };
 
@@ -46,15 +42,15 @@ const Goryangju = ({ resetButtons }) => {
         <button className="button" onClick={handleBack}>Home</button>
       </div>
       <div className="page-content">
-        <h2>Goryangju</h2>
+        <h2>Gaoliang</h2>
         <p>
-          Goryangju is a traditional Korean alcoholic beverage made from fermented grains. It is known for its rich, distinctive flavor and has a long history in Korean culture. Goryangju is often enjoyed as part of Korean meals or during special occasions.
+          Gaoliang is a traditional Chinese distilled spirit made from sorghum. It is known for its high alcohol content and strong flavor. Gaoliang is often consumed in small quantities and is a popular choice in Chinese culture.
         </p>
         <p>
-          The alcohol content of Goryangju can vary, typically ranging from 16% to 20%. It is commonly consumed in small quantities and is appreciated for its unique taste profile, which can include both sweet and savory notes.
+          The flavor profile of Gaoliang can vary, but it typically has a robust and complex taste with a distinct aroma. It is commonly enjoyed straight or as part of various traditional Chinese dishes.
         </p>
         <p>
-          Goryangju is a valued part of Korean heritage and continues to be enjoyed by enthusiasts around the world.
+          Gaoliang's strong taste and high alcohol content make it a unique and flavorful choice for those interested in exploring traditional Chinese spirits.
         </p>
 
         <div className="sort-buttons">
@@ -67,7 +63,8 @@ const Goryangju = ({ resetButtons }) => {
             <div key={index} className="data-item">
               <h3>{item.name}</h3>
               <p>Country: {item.country}</p>
-              <p>Alcohol Content: {item.alcoholContent}</p>
+              <p>Alcohol Content: {item.alcoholContent}%</p>
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
@@ -76,4 +73,5 @@ const Goryangju = ({ resetButtons }) => {
   );
 };
 
-export default Goryangju;
+export default Gaoliang;
+

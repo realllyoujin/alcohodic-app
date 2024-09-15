@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Dassai 23",
+      "alcoholContent": 16.0,
+      "country": "Japan",
+      "description": "일본의 고급 사케로, 섬세하고 부드러운 맛과 과일 향이 특징입니다."
+    },
+    {
+      "name": "Junya Honjozo",
+      "alcoholContent": 15.0,
+      "country": "Japan",
+      "description": "부드럽고 균형 잡힌 맛을 가진 일본의 전통적인 혼조조 사케입니다."
+    },
+    {
+      "name": "Kikusui Junmai Ginjo",
+      "alcoholContent": 15.5,
+      "country": "Japan",
+      "description": "상쾌하고 부드러운 맛을 지닌 일본의 준마이 긴조 사케로, 복합적인 향이 특징입니다."
+    },
+    {
+      "name": "Kubota Manju",
+      "alcoholContent": 16.0,
+      "country": "Japan",
+      "description": "일본의 프리미엄 사케로, 고소하고 부드러운 맛과 향이 특징입니다."
+    },
+    {
+      "name": "Hakkaisan Junmai Ginjo",
+      "alcoholContent": 15.0,
+      "country": "Japan",
+      "description": "깔끔하고 드라이한 맛이 특징인 일본의 준마이 긴조 사케입니다."
+    },
+    {
+      "name": "Sawanotsuru Junmai",
+      "alcoholContent": 16.5,
+      "country": "Japan",
+      "description": "부드럽고 풍부한 맛이 특징인 일본의 준마이 사케로, 식사와 잘 어울립니다."
+    },
+    {
+      "name": "Shichida Junmai Daiginjo",
+      "alcoholContent": 17.0,
+      "country": "Japan",
+      "description": "고급스러운 향과 복합적인 맛을 가진 일본의 준마이 다이긴조 사케입니다."
+    },
+    {
+      "name": "Nodoguro Junmai",
+      "alcoholContent": 15.5,
+      "country": "Japan",
+      "description": "일본의 전통적인 사케로, 깊고 풍부한 맛이 특징이며 다양한 음식과 잘 어울립니다."
+    },
+    {
+      "name": "Otokoyama Tokubetsu Junmai",
+      "alcoholContent": 16.0,
+      "country": "Japan",
+      "description": "균형 잡힌 맛과 상쾌한 느낌이 특징인 일본의 특급 준마이 사케입니다."
+    },
+    {
+      "name": "Shuzo Junmai Ginjo",
+      "alcoholContent": 15.0,
+      "country": "Japan",
+      "description": "부드럽고 고급스러운 맛을 지닌 일본의 준마이 긴조 사케로, 다양한 음식과 잘 어울립니다."
+    }
+  ]
+  

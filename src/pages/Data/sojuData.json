@@ -1,63 +1,62 @@
 [
     {
-      "name": "참이슬 후레쉬",
-      "alcoholContent": 16.5,
-      "country": "대한민국",
-      "description": "대한민국에서 가장 대중적인 소주로, 깨끗하고 깔끔한 맛이 특징입니다."
+        "name": "Chamisul Fresh",
+        "alcoholContent": 16.5,
+        "country": "South Korea",
+        "description": "The most popular soju in South Korea, known for its clean and crisp taste."
     },
     {
-      "name": "대선",
-      "alcoholContent": 16.5,
-      "country": "대한민국",
-      "description": "부드럽고 가벼운 맛으로 최근 인기를 끌고 있는 소주입니다."
+        "name": "Daesun",
+        "alcoholContent": 16.5,
+        "country": "South Korea",
+        "description": "A soju with a smooth and light taste, recently gaining popularity."
     },
     {
-      "name": "처음처럼 순한 맛",
-      "alcoholContent": 16.5,
-      "country": "대한민국",
-      "description": "부드럽고 순한 맛으로, 참이슬 후레쉬와 함께 많은 소비자들에게 인기가 있습니다."
+        "name": "Cheoeum-Cheoreom Mild Taste",
+        "alcoholContent": 16.5,
+        "country": "South Korea",
+        "description": "A mild and smooth soju that is popular among consumers along with Chamisul Fresh."
     },
     {
-      "name": "진로",
-      "alcoholContent": 16.5,
-      "country": "대한민국",
-      "description": "레트로한 디자인과 출시 당시 낮은 도수로 인기를 끈 소주입니다."
+        "name": "Jinro",
+        "alcoholContent": 16.5,
+        "country": "South Korea",
+        "description": "A soju with a retro design and low alcohol content at launch, which gained popularity."
     },
     {
-      "name": "좋은데이",
-      "alcoholContent": 16.5,
-      "country": "대한민국",
-      "description": "부드럽고 순한 맛으로, 청년층 사이에서 인기가 높습니다."
+        "name": "Good Day",
+        "alcoholContent": 16.5,
+        "country": "South Korea",
+        "description": "A smooth and mild soju popular among the younger generation."
     },
     {
-      "name": "한라산",
-      "alcoholContent": 21,
-      "country": "대한민국",
-      "description": "제주도에서 생산되는 강한 도수와 독특한 풍미의 소주입니다."
+        "name": "Halla-san",
+        "alcoholContent": 21,
+        "country": "South Korea",
+        "description": "A soju produced in Jeju Island, known for its high alcohol content and unique flavor."
     },
     {
-      "name": "화요",
-      "alcoholContent": 25,
-      "country": "대한민국",
-      "description": "프리미엄 증류주로, 깊고 풍부한 맛이 특징입니다."
+        "name": "Hwayo",
+        "alcoholContent": 25,
+        "country": "South Korea",
+        "description": "A premium distilled liquor with a deep and rich taste."
     },
     {
-      "name": "백세주",
-      "alcoholContent": 13,
-      "country": "대한민국",
-      "description": "전통적인 한국 약주로, 은은한 단맛과 건강 이미지를 강조합니다."
+        "name": "Baekseju",
+        "alcoholContent": 13,
+        "country": "South Korea",
+        "description": "A traditional Korean medicinal wine, emphasizing a subtle sweetness and health image."
     },
     {
-      "name": "이슬톡톡",
-      "alcoholContent": 3,
-      "country": "대한민국",
-      "description": "저도수의 과일향 소주로, 가볍게 즐길 수 있는 음료입니다."
+        "name": "Isul Tok Tok",
+        "alcoholContent": 3,
+        "country": "South Korea",
+        "description": "A low-alcohol fruit-flavored soju, perfect for light enjoyment."
     },
     {
-      "name": "매화수",
-      "alcoholContent": 14,
-      "country": "대한민국",
-      "description": "매화향이 가미된 소주로, 상큼한 맛이 특징입니다."
+        "name": "Maehwasu",
+        "alcoholContent": 14,
+        "country": "South Korea",
+        "description": "A soju infused with plum blossom flavor, known for its refreshing taste."
     }
-  ]
-  
+]

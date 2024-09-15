@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Red Star Erguotou",
+      "alcoholContent": 56,
+      "country": "China",
+      "description": "중국에서 가장 유명한 고량주로, 강렬한 맛과 높은 알코올 도수로 잘 알려져 있습니다."
+    },
+    {
+      "name": "Moutai",
+      "alcoholContent": 53,
+      "country": "China",
+      "description": "중국 최고의 프리미엄 고량주로, 부드럽고 복합적인 맛이 특징입니다. 국제적으로도 매우 인기가 높습니다."
+    },
+    {
+      "name": "Wuliangye",
+      "alcoholContent": 52,
+      "country": "China",
+      "description": "상당히 부드러운 맛과 풍부한 향이 특징인 고량주로, 중국 내외에서 많은 사랑을 받고 있습니다."
+    },
+    {
+      "name": "Xifengjiu",
+      "alcoholContent": 50,
+      "country": "China",
+      "description": "전통적인 맛과 향을 지닌 고량주로, 장기간 숙성된 깊이 있는 맛이 특징입니다."
+    },
+    {
+      "name": "Yanghe Daqu",
+      "alcoholContent": 52,
+      "country": "China",
+      "description": "부드러운 맛과 달콤한 향이 특징인 고량주로, 중국 내에서 널리 소비됩니다."
+    },
+    {
+      "name": "Luzhou Laojiao",
+      "alcoholContent": 52,
+      "country": "China",
+      "description": "전통적인 제조 방식으로 만든 고량주로, 복합적인 맛과 향이 인상적입니다."
+    },
+    {
+      "name": "Jiannanchun",
+      "alcoholContent": 52,
+      "country": "China",
+      "description": "부드럽고 깔끔한 맛을 지닌 고량주로, 중국 내외에서 매우 인기가 있습니다."
+    },
+    {
+      "name": "Guojingjiu",
+      "alcoholContent": 50,
+      "country": "China",
+      "description": "전통적인 제조 방식으로 만들어진 고량주로, 농후한 향과 맛이 특징입니다."
+    },
+    {
+      "name": "Fenjiu",
+      "alcoholContent": 46,
+      "country": "China",
+      "description": "상쾌하고 부드러운 맛이 특징인 고량주로, 중국 내에서 오랜 역사를 지니고 있습니다."
+    },
+    {
+      "name": "Xuanmeng",
+      "alcoholContent": 50,
+      "country": "China",
+      "description": "부드러운 맛과 독특한 향이 특징인 고량주로, 최근 국제적으로도 알려지고 있습니다."
+    }
+  ]
+  

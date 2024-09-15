@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Château Margaux",
+      "alcoholContent": 13.5,
+      "country": "France",
+      "description": "보르도 지역에서 생산된 풀 바디 레드 와인으로, 블랙커런트, 담배, 오크 향이 특징입니다."
+    },
+    {
+      "name": "Barolo",
+      "alcoholContent": 14.0,
+      "country": "Italy",
+      "description": "이탈리아 피에몬테 지역의 강렬하고 복합적인 레드 와인으로, 장기 숙성에 적합합니다."
+    },
+    {
+      "name": "Riesling",
+      "alcoholContent": 12.0,
+      "country": "Germany",
+      "description": "독일에서 생산된 화이트 와인으로, 상큼한 과일 향과 산뜻한 산미가 특징입니다."
+    },
+    {
+      "name": "Malbec",
+      "alcoholContent": 13.5,
+      "country": "Argentina",
+      "description": "아르헨티나에서 재배된 포도로 만든 레드 와인으로, 자두와 블랙베리 향이 두드러집니다."
+    },
+    {
+      "name": "Pinot Noir",
+      "alcoholContent": 13.0,
+      "country": "France",
+      "description": "프랑스 부르고뉴 지역의 부드럽고 우아한 레드 와인으로, 체리와 베리류의 향이 조화롭습니다."
+    },
+    {
+      "name": "Sauvignon Blanc",
+      "alcoholContent": 12.5,
+      "country": "New Zealand",
+      "description": "뉴질랜드에서 생산된 화이트 와인으로, 열대 과일과 풀 향이 잘 어우러진 신선한 맛이 특징입니다."
+    },
+    {
+      "name": "Chianti",
+      "alcoholContent": 13.0,
+      "country": "Italy",
+      "description": "이탈리아 토스카나 지역의 클래식한 레드 와인으로, 붉은 과일과 허브 향이 특징입니다."
+    },
+    {
+      "name": "Cava",
+      "alcoholContent": 11.5,
+      "country": "Spain",
+      "description": "스페인의 대표적인 스파클링 와인으로, 상쾌한 탄산과 시트러스 향이 매력적입니다."
+    },
+    {
+      "name": "Syrah",
+      "alcoholContent": 14.0,
+      "country": "Australia",
+      "description": "호주에서 생산된 강렬하고 스파이시한 레드 와인으로, 검은 후추와 자두 향이 특징입니다."
+    },
+    {
+      "name": "Champagne",
+      "alcoholContent": 12.0,
+      "country": "France",
+      "description": "프랑스 샹파뉴 지역의 스파클링 와인으로, 섬세한 기포와 복합적인 향이 특징입니다."
+    }
+  ]
+  

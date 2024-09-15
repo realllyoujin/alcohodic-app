@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Heineken",
+      "alcoholContent": 5.0,
+      "country": "Netherlands",
+      "description": "네덜란드에서 생산된 라거 맥주로, 깨끗하고 상쾌한 맛과 부드러운 탄산이 특징입니다."
+    },
+    {
+      "name": "Guinness",
+      "alcoholContent": 4.2,
+      "country": "Ireland",
+      "description": "아일랜드의 유명한 스타우트 맥주로, 진한 커피와 초콜릿 맛이 강조됩니다."
+    },
+    {
+      "name": "Corona",
+      "alcoholContent": 4.5,
+      "country": "Mexico",
+      "description": "멕시코에서 생산된 라거 맥주로, 가벼운 맛과 상쾌한 느낌이 특징이며 라임과 함께 즐기기 좋습니다."
+    },
+    {
+      "name": "Sapporo",
+      "alcoholContent": 5.0,
+      "country": "Japan",
+      "description": "일본의 대표적인 라거 맥주로, 깔끔하고 부드러운 맛이 특징입니다."
+    },
+    {
+      "name": "Budweiser",
+      "alcoholContent": 5.0,
+      "country": "USA",
+      "description": "미국에서 생산된 라거 맥주로, 부드럽고 균형 잡힌 맛이 특징입니다."
+    },
+    {
+      "name": "Chimay Blue",
+      "alcoholContent": 9.0,
+      "country": "Belgium",
+      "description": "벨기에의 트라피스트 맥주로, 진한 과일 향과 복합적인 맛이 특징입니다."
+    },
+    {
+      "name": "Pilsner Urquell",
+      "alcoholContent": 4.4,
+      "country": "Czech Republic",
+      "description": "체코에서 생산된 필스너 맥주로, 상쾌하고 쌉쌀한 맛이 특징입니다."
+    },
+    {
+      "name": "Stone IPA",
+      "alcoholContent": 6.9,
+      "country": "USA",
+      "description": "미국의 IPA 맥주로, 강렬한 홉 향과 쌉쌀한 맛이 특징입니다."
+    },
+    {
+      "name": "Hoegaarden",
+      "alcoholContent": 4.9,
+      "country": "Belgium",
+      "description": "벨기에에서 생산된 화이트 비어로, 향긋한 오렌지와 고수 향이 특징입니다."
+    },
+    {
+      "name": "Asahi Super Dry",
+      "alcoholContent": 5.0,
+      "country": "Japan",
+      "description": "일본의 슈퍼 드라이 라거 맥주로, 깨끗하고 산뜻한 맛이 특징입니다."
+    }
+  ]
+  

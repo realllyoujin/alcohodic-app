@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'; 
-
-const beerData = [
-  { name: 'Beer A', country: 'USA', alcoholContent: '5%' },
-  { name: 'Beer B', country: 'Germany', alcoholContent: '4.5%' },
-  { name: 'Beer C', country: 'Belgium', alcoholContent: '6%' },
-  { name: 'Beer D', country: 'UK', alcoholContent: '4.2%' },
-  // 추가 데이터
-];
+import '../App.css';
+import beerData from './Data/beerData.json'; // JSON 파일 import
 
 const Beer = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
   const navigate = useNavigate();
-
+  
   const handleBack = () => {
     resetButtons();
     navigate('/');
@@ -48,13 +41,7 @@ const Beer = ({ resetButtons }) => {
       <div className="page-content">
         <h2>Beer</h2>
         <p>
-          Beer is one of the oldest and most widely consumed alcoholic beverages in the world. It is typically made from cereal grains, such as barley, and is flavored with hops. Beer comes in a variety of styles and flavors, from light lagers to rich stouts.
-        </p>
-        <p>
-          The alcohol content of beer generally ranges from 4% to 6%, though some styles can be much stronger. It is often enjoyed socially and pairs well with a variety of foods. Craft beer has also gained popularity, with many breweries experimenting with new and unique flavors.
-        </p>
-        <p>
-          Beer is typically served chilled and can be enjoyed in a variety of settings, from casual gatherings to fine dining. Its rich history and diverse range of styles make it a favorite among many drinkers worldwide.
+          Beer is one of the oldest and most widely consumed alcoholic beverages, made from fermented grains. It comes in many varieties, including lagers, ales, stouts, and IPAs, each offering unique flavors.
         </p>
 
         <div className="sort-buttons">
@@ -67,7 +54,7 @@ const Beer = ({ resetButtons }) => {
             <div key={index} className="data-item">
               <h3>{item.name}</h3>
               <p>Country: {item.country}</p>
-              <p>Alcohol Content: {item.alcoholContent}</p>
+              <p>Alcohol Content: {item.alcoholContent}%</p>
             </div>
           ))}
         </div>

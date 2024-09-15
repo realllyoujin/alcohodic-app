@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css';  // CSS 파일을 임포트합니다
-
-const wineData = [
-  { name: 'Wine A', country: 'France', alcoholContent: '12.5%' },
-  { name: 'Wine B', country: 'Italy', alcoholContent: '13%' },
-  { name: 'Wine C', country: 'Spain', alcoholContent: '14%' },
-  { name: 'Wine D', country: 'USA', alcoholContent: '13.5%' },
-  // 추가 데이터
-];
+import '../App.css';
+import wineData from './Data/wineData.json'; // JSON 파일 import
 
 const Wine = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
   const navigate = useNavigate();
-
+  
   const handleBack = () => {
     resetButtons();
     navigate('/');
@@ -48,13 +41,7 @@ const Wine = ({ resetButtons }) => {
       <div className="page-content">
         <h2>Wine</h2>
         <p>
-          Wine is an alcoholic beverage made from fermented grapes or other fruits. The process of making wine involves crushing the fruit and fermenting the juice with yeast. There are many types of wine, including red, white, and rosé, each with its own unique flavor profile and characteristics.
-        </p>
-        <p>
-          The alcohol content of wine typically ranges from 9% to 16%, depending on the type and production method. Wine can be enjoyed on its own or paired with a variety of foods to enhance the dining experience.
-        </p>
-        <p>
-          Different regions around the world produce wines with distinct flavors and qualities, making wine tasting a popular and enjoyable activity. From bold reds to crisp whites, wine offers a diverse range of options for enthusiasts and casual drinkers alike.
+          Wine is a fermented beverage made from grapes. Different types of wine, such as red, white, and sparkling, are enjoyed worldwide, offering a wide range of flavors and aromas influenced by the grape variety and region.
         </p>
 
         <div className="sort-buttons">
@@ -67,7 +54,7 @@ const Wine = ({ resetButtons }) => {
             <div key={index} className="data-item">
               <h3>{item.name}</h3>
               <p>Country: {item.country}</p>
-              <p>Alcohol Content: {item.alcoholContent}</p>
+              <p>Alcohol Content: {item.alcoholContent}%</p>
             </div>
           ))}
         </div>
@@ -77,4 +64,5 @@ const Wine = ({ resetButtons }) => {
 };
 
 export default Wine;
+
 

@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css'; 
-
-const sojuData = [
-  { name: 'Soju A', country: 'Korea', alcoholContent: '20%' },
-  { name: 'Soju B', country: 'Korea', alcoholContent: '25%' },
-  { name: 'Soju C', country: 'Japan', alcoholContent: '15%' },
-  { name: 'Soju D', country: 'China', alcoholContent: '22%' },
-];
+import sojuData from './Data/sojuData.json';  // JSON 파일을 임포트합니다
 
 const Soju = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
@@ -76,3 +70,4 @@ const Soju = ({ resetButtons }) => {
 };
 
 export default Soju;
+

@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Jim Beam",
+      "country": "미국",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Jack Daniel’s",
+      "country": "미국",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Jameson",
+      "country": "아일랜드",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Crown Royal",
+      "country": "캐나다",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Canadian Club",
+      "country": "캐나다",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Suntory Kakubin",
+      "country": "일본",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Black Nikka",
+      "country": "일본",
+      "alcoholContent": "40%"
+    },
+    {
+      "name": "Evan Williams",
+      "country": "미국",
+      "alcoholContent": "43%"
+    },
+    {
+      "name": "Maker’s Mark",
+      "country": "미국",
+      "alcoholContent": "45%"
+    },
+    {
+      "name": "Ballantine’s",
+      "country": "스코틀랜드",
+      "alcoholContent": "40%"
+    }
+  ]
+  

@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import whiskeyData from './Data/whiskeyData.json';
 import '../App.css';  // CSS 파일을 임포트합니다
-
-const whiskeyData = [
-  { name: 'Whiskey A', country: 'Scotland', alcoholContent: '40%' },
-  { name: 'Whiskey B', country: 'USA', alcoholContent: '45%' },
-  { name: 'Whiskey C', country: 'Ireland', alcoholContent: '43%' },
-  { name: 'Whiskey D', country: 'Japan', alcoholContent: '50%' },
-  // 추가 데이터
-];
 
 const Whiskey = ({ resetButtons }) => {
   const [sortBy, setSortBy] = useState('none');
+  const [data, setData] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // JSON 데이터 세팅
+    setData(whiskeyData);
+  }, []);
 
   const handleBack = () => {
     resetButtons();
@@ -26,11 +25,11 @@ const Whiskey = ({ resetButtons }) => {
   const sortedData = () => {
     switch (sortBy) {
       case 'country':
-        return [...whiskeyData].sort((a, b) => a.country.localeCompare(b.country));
+        return [...data].sort((a, b) => a.country.localeCompare(b.country));
       case 'alcoholContent':
-        return [...whiskeyData].sort((a, b) => parseFloat(a.alcoholContent) - parseFloat(b.alcoholContent));
+        return [...data].sort((a, b) => parseFloat(a.alcoholContent) - parseFloat(b.alcoholContent));
       default:
-        return whiskeyData;
+        return data;
     }
   };
 
